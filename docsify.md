@@ -5,7 +5,6 @@ Docsify is a lightweight, flexible, and easy-to-set-up documentation generator t
 
 - Distributor ID: Ubuntu <br>
 - Description: Ubuntu 22.04.3 LTS <br>
-- Release: 22.04 <br>
 - Codename: jammy<br>
 
 **Prerequisites tools:**
@@ -39,7 +38,11 @@ Then use podman installation command:
 
 **Step 1: Update and Upgrade Your System**
 
-sudo apt update output:
+sudo apt update 
+
+
+output
+
 
 Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease                                            
 Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease                                                    
@@ -124,7 +127,34 @@ ENTRYPOINT docsify serve .
 vim index.html
 ```
 
+``` bash 
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
+    />
+    <style>
+    
+      
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        //...
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  </body>
+</html>
+  ```
 
 Add details in html file:
 
@@ -134,7 +164,14 @@ e in md format**
 ```bash
 touch README.md
 ```
+
+```bash
+OUTPUT:
+
+Hii i am manish Chaudhary
+```
 - touch : Use for creating new file.
+- touch README.md : you can add your project here whatever you want to write.
   
 Here we can check all files by using this command:
 
@@ -228,7 +265,7 @@ c7fba40c27d8  k8s.gcr.io/pause:3.5                       2 weeks ago         Cre
 
 Make a new repository with public account.<br>
 Give a name to new repository.<br>
-After entering the name, It will show like this:
+
 
 
 **Step-2:-Clone the repository**
